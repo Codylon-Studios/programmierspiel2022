@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+        programmierspiel2022
+    </title>
+</head>
+
+<body>
+    <canvas id="canvas1" width="700" height="750">
+    </canvas>
+    <style>
+        canvas {
+            border: 12px solid black;
+        }
+    </style>
+    <script src="swordplayer.js"></script>
+    <script src="hearts.js"></script>
+    <script src="mobs.js"></script>
+    <script src="gadjets.js"></script>
+    <script src="gmupdt.js"></script>
+    <script src="upgrade_section.js"></script>
+    <script src="var_classes.js"></script>
+    <script src="gameplay.js"></script>
+    <script src="levelselection.js"></script>
+    <script src="lobby.js"></script>
+    <script src="death.js"></script>
+    <script src="click.js"></script>
+    <script src="featutreblock.js"></script>
+    <script src="tester.js"></script>
+    <script>
+        //checking if mouse down, if true callin click function
+        window.addEventListener('mousedown', (event) => { click() });
+        //adding mousemove function, setting mx and my
+        window.addEventListener('mousemove', function (e) {
+        mx = e.x
+        my = e.y
+})
+        //gameupdt
+        setInterval(gmupdt, mult);
+    </script>
+</body>
+
+</html>
